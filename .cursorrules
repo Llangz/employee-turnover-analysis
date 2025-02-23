@@ -1,0 +1,118 @@
+# Employee Turnover Analysis .cursorrules
+
+## Core Competencies
+- Expert in HR analytics and employee turnover prediction using Python
+- Specialist in preprocessing HR data and feature engineering
+- Focus on interpretable machine learning models for stakeholder communication
+
+## Data Analysis Principles
+- Write production-ready code optimized for HR data processing
+- Ensure reproducibility and documentation for HR stakeholders
+- Implement bias detection and mitigation strategies
+- Handle sensitive employee data with appropriate privacy measures
+- Use type hints and docstrings for better code maintainability
+
+## HR Data Processing
+- Use pandas for employee data manipulation with an emphasis on:
+  - Handling datetime features for tenure calculations
+  - Processing categorical HR data (departments, roles, locations)
+  - Dealing with hierarchical organizational structures
+  - Computing rolling statistics for time-based features
+- Implement data anonymization techniques
+- Handle class imbalance in turnover prediction
+- Create derived features relevant to turnover:
+  - Tenure metrics
+  - Performance indicators
+  - Compensation ratios
+  - Team dynamics metrics
+  - Workload indicators
+
+## Visualization Guidelines
+- Create HR-specific visualization functions for:
+  - Survival curves for employee tenure
+  - Department-wise turnover rates
+  - Correlation matrices for HR metrics
+  - Performance vs. retention plots
+  - Salary band distribution charts
+- Use colorblind-friendly palettes
+- Implement interactive visualizations for stakeholder presentations
+- Create standardized reporting templates
+
+## Machine Learning Best Practices
+- Focus on interpretable models (logistic regression, decision trees)
+- Implement feature importance analysis
+- Use cross-validation with time-based splitting
+- Create custom metrics for turnover prediction:
+  - Cost-sensitive evaluation metrics
+  - Time-weighted accuracy measures
+  - Department-specific performance metrics
+- Generate model explanation reports using SHAP or LIME
+
+## Error Handling and Validation
+- Validate HR data integrity:
+  - Check for logical inconsistencies in dates
+  - Verify salary ranges
+  - Validate employee IDs and hierarchies
+  - Monitor for data drift in production
+- Implement data quality scores
+- Create automated data quality reports
+
+## Performance Optimization
+- Use efficient data structures for HR data:
+  - Categorical types for departments and roles
+  - Sparse matrices for one-hot encoded features
+  - Memory-efficient datetime representations
+- Implement incremental learning for model updates
+- Cache intermediate results for frequently accessed metrics
+
+## Dependencies
+- Primary:
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+- HR Analytics Specific:
+  - lifelines (for survival analysis)
+  - shap (for model interpretation)
+  - imbalanced-learn (for handling class imbalance)
+  - category_encoders (for categorical feature processing)
+
+## Documentation Requirements
+- Document all feature engineering steps
+- Maintain data dictionaries for HR metrics
+- Create model cards for each deployed model
+- Include bias and fairness assessments
+- Document regulatory compliance measures
+
+## Project Structure
+```
+project/
+├── data/
+│   ├── raw/                 # Original HR data
+│   ├── interim/            # Transformed data
+│   └── processed/          # Final analysis-ready data
+├── notebooks/
+│   ├── 01_exploration/     # Initial data analysis
+│   ├── 02_preprocessing/   # Feature engineering
+│   └── 03_modeling/        # Turnover prediction
+├── src/
+│   ├── features/           # Feature engineering code
+│   ├── models/             # Model training code
+│   └── visualization/      # Plotting functions
+└── reports/                # Analysis results and visualizations
+```
+
+## Version Control
+- Use meaningful commit messages relating to HR analytics
+- Tag versions for model releases
+- Maintain changelog for feature engineering changes
+- Document data preprocessing pipelines
+
+## Quality Assurance
+- Unit tests for feature engineering
+- Model performance tests
+- Data quality checks
+- Bias assessment metrics
+
+Always refer to current HR analytics best practices and regulatory requirements when implementing these rules.
